@@ -1,0 +1,88 @@
+{
+  "heading": "Professional Journey",
+  "subtitle": "Transforming ideas into digital reality, one project at a time",
+  "positions": [
+    {
+      "title": "Infrastructure Engineer",
+      "company": "PayPal",
+      "location": "",
+      "startDate": "2025",
+      "endDate": "Present",
+      "description": "Validate SD-WAN, firewall, and hybrid Azure/AWS network changes with network and security teams before production rollout, including readiness checks for rollouts affecting 5,000+ users.\nTroubleshoot and resolve escalated DNS, DHCP, VPN, and connectivity issues across hybrid environments using Wireshark, Prometheus/Grafana, and system logs; eliminate recurring root causes to reduce repeat tickets.\nImplement Zero Trust access controls (Entra ID Conditional Access, MFA, RBAC) across a 2,000+ device environment to secure network and application access.\nInvestigate escalated authentication and provisioning issues across hybrid Active Directory and Entra ID environments, supporting Windows Server-based identity infrastructure.\nAutomate configuration reporting and compliance checks with Ansible, PowerShell, Terraform, and Microsoft Graph API, reducing manual work by ~35%.\nMaintain Visio network diagrams, runbooks, and ITIL v4 change documentation; participate in CAB to plan deployment windows, rollback plans, and post-implementation reviews.\nMentor newer team members on troubleshooting methodology and deployment workflows.",
+      "achievements": [
+        "Validate SD-WAN, firewall, and hybrid Azure/AWS network changes with network and security teams before production rollout, including readiness checks for rollouts affecting 5,000+ users.",
+        "Troubleshoot and resolve escalated DNS, DHCP, VPN, and connectivity issues across hybrid environments using Wireshark, Prometheus/Grafana, and system logs; eliminate recurring root causes to reduce repeat tickets.",
+        "Implement Zero Trust access controls (Entra ID Conditional Access, MFA, RBAC) across a 2,000+ device environment to secure network and application access.",
+        "Investigate escalated authentication and provisioning issues across hybrid Active Directory and Entra ID environments, supporting Windows Server-based identity infrastructure.",
+        "Automate configuration reporting and compliance checks with Ansible, PowerShell, Terraform, and Microsoft Graph API, reducing manual work by ~35%.",
+        "Maintain Visio network diagrams, runbooks, and ITIL v4 change documentation; participate in CAB to plan deployment windows, rollback plans, and post-implementation reviews.",
+        "Mentor newer team members on troubleshooting methodology and deployment workflows."
+      ],
+      "technologies": [
+        "SD-WAN",
+        "Azure",
+        "AWS",
+        "Wireshark",
+        "Prometheus",
+        "Grafana",
+        "Entra ID",
+        "MFA",
+        "RBAC",
+        "Active Directory",
+        "Windows Server",
+        "Ansible",
+        "PowerShell",
+        "Terraform",
+        "Microsoft Graph API",
+        "Visio",
+        "ITIL v4"
+      ]
+    },
+    {
+      "title": "Associate Network Engineer",
+      "company": "Provenetix Consulting Services",
+      "location": "",
+      "startDate": "2021",
+      "endDate": "2023",
+      "description": "Built and maintained multi-site LAN/WAN on Cisco IOS/NX-OS (BGP, OSPF, MPLS, VLANs, EtherChannel) across 30+ devices and 15+ network segments.\nTuned BGP route policy and prefix filtering for ISP peering, reducing routing convergence time by ~22%.\nConfigured Cisco ASA and FortiGate firewalls, IPSec/SSL and GRE tunnels, RADIUS/TACACS+ authentication, and F5 load balancers; supported wireless LAN design for office and branch sites.\nDelivered hybrid connectivity across Azure VNets/ExpressRoute and AWS VPC/Transit Gateway for 10+ hybrid network paths.\nWrote Python (Netmiko, NAPALM), PowerShell, and Ansible automation for configuration validation and compliance checks, reducing manual configuration work by ~45%.\nMonitored performance with SolarWinds, PRTG, Wireshark, and NetFlow, reducing MTTR by ~30%; resolved Tier 2/3 ServiceNow tickets at 98% SLA adherence.\nRan validation for network upgrades, hardware changes, and SD-WAN migrations; authored HLD/LLD documentation, network diagrams, runbooks, and validation reports.",
+      "achievements": [
+        "Built and maintained multi-site LAN/WAN on Cisco IOS/NX-OS (BGP, OSPF, MPLS, VLANs, EtherChannel) across 30+ devices and 15+ network segments.",
+        "Tuned BGP route policy and prefix filtering for ISP peering, reducing routing convergence time by ~22%.",
+        "Configured Cisco ASA and FortiGate firewalls, IPSec/SSL and GRE tunnels, RADIUS/TACACS+ authentication, and F5 load balancers; supported wireless LAN design for office and branch sites.",
+        "Delivered hybrid connectivity across Azure VNets/ExpressRoute and AWS VPC/Transit Gateway for 10+ hybrid network paths.",
+        "Wrote Python (Netmiko, NAPALM), PowerShell, and Ansible automation for configuration validation and compliance checks, reducing manual configuration work by ~45%.",
+        "Monitored performance with SolarWinds, PRTG, Wireshark, and NetFlow, reducing MTTR by ~30%; resolved Tier 2/3 ServiceNow tickets at 98% SLA adherence.",
+        "Ran validation for network upgrades, hardware changes, and SD-WAN migrations; authored HLD/LLD documentation, network diagrams, runbooks, and validation reports."
+      ],
+      "technologies": [
+        "Cisco IOS/NX-OS",
+        "BGP",
+        "OSPF",
+        "MPLS",
+        "VLANs",
+        "EtherChannel",
+        "Cisco ASA",
+        "FortiGate",
+        "IPSec/SSL",
+        "GRE",
+        "RADIUS/TACACS+",
+        "F5",
+        "Azure VNets",
+        "ExpressRoute",
+        "AWS VPC",
+        "Transit Gateway",
+        "Python",
+        "Netmiko",
+        "NAPALM",
+        "PowerShell",
+        "Ansible",
+        "SolarWinds",
+        "PRTG",
+        "Wireshark",
+        "NetFlow",
+        "ServiceNow",
+        "SD-WAN"
+      ]
+    }
+  ]
+}

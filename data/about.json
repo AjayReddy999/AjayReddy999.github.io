@@ -1,0 +1,24 @@
+{
+  "heading": "About Me",
+  "roles": "Network Infrastructure Engineer, Infrastructure Engineer, Associate Network Engineer",
+  "bio": [
+    "Network Infrastructure Engineer with 4+ years across enterprise LAN/WAN, hybrid cloud networking (AWS/Azure), network security, systems and identity infrastructure, and automation. Currently at PayPal, validating SD-WAN, firewall, and hybrid-cloud changes with network and security teams, enforcing Zero Trust access, and troubleshooting DNS, DHCP, VPN, and authentication issues across hybrid environments.",
+    "Previously built and operated multi-site Cisco and Fortinet networks for an energy-sector client. Strong in BGP/OSPF, secure connectivity, observability, and automation with Python, Ansible, Terraform, and Netmiko/NAPALM. M.S. Computer Science; CCNA."
+  ],
+  "quote": "I'm a lifelong learner and innovator, driven by a desire to contribute with new ideas and tools that deliver real value.",
+  "highlights": [
+    {
+      "label": "Years Experience",
+      "value": "1+"
+    },
+    {
+      "label": "Projects Completed",
+      "value": "3+"
+    },
+    {
+      "label": "Technologies",
+      "value": "60+"
+    }
+  ],
+  "avatarUrl": ""
+}

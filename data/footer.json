@@ -1,0 +1,22 @@
+{
+  "copyright": "AJAYKUMAR REDDY DEVARAPALLI",
+  "year": "2026",
+  "tagline": "Crafting digital experiences with passion and precision.",
+  "links": [
+    {
+      "label": "GitHub",
+      "url": "https://github.com/Ajay-Devarapalli",
+      "icon": "github"
+    },
+    {
+      "label": "LinkedIn",
+      "url": "https://www.linkedin.com/in/ajaykumar-networkengineer/",
+      "icon": "linkedin"
+    },
+    {
+      "label": "Email",
+      "url": "mailto:dajaykumarnetworkeng@gmail.com",
+      "icon": "email"
+    }
+  ]
+}

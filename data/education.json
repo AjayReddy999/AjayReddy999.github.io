@@ -1,0 +1,33 @@
+{
+  "heading": "Educational Journey",
+  "subtitle": "Discover how academic excellence shapes innovative thinking and professional growth.",
+  "entries": [
+    {
+      "degree": "Master of Science",
+      "institution": "Lamar University, Beaumont, Texas",
+      "field": "Computer Science",
+      "startDate": "2023",
+      "endDate": "2025",
+      "gpa": "",
+      "description": "",
+      "achievements": [],
+      "skills": []
+    },
+    {
+      "degree": "Bachelor of Technology",
+      "institution": "Jawaharlal Nehru Technological University Hyderabad, India",
+      "field": "Computer Science",
+      "startDate": "2019",
+      "endDate": "2023",
+      "gpa": "",
+      "description": "",
+      "achievements": [],
+      "skills": []
+    }
+  ],
+  "certifications": [
+    "Cisco Certified Network Associate (CCNA)",
+    "Network Automation with Python",
+    "Windows Server Administration Fundamentals"
+  ]
+}

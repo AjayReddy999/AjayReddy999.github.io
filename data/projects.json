@@ -1,0 +1,94 @@
+{
+  "heading": "Featured Projects",
+  "projects": [
+    {
+      "name": "Centralized Asset Management & Compliance Dashboard",
+      "description": "**Centralized asset-management and compliance platform** designed to provide security assessment, compliance monitoring, and data-loss-prevention capabilities across managed infrastructure.",
+      "technologies": [],
+      "imageUrl": "",
+      "liveUrl": "",
+      "githubUrl": "https://github.com/AjayReddy999/",
+      "color": "#5196fd"
+    },
+    {
+      "name": "YouTube Trending Data ETL on AWS",
+      "description": "Production-oriented AWS ETL pipeline** for ingesting, transforming, cataloging, querying, and visualizing YouTube trending-video data.",
+      "technologies": [
+        "VLANs",
+        "OSPF",
+        "NAT",
+        "Cisco switching",
+        "Fortinet firewall",
+        "IPSec VPN",
+        "QoS",
+        "DNS",
+        "Wireshark",
+        "NetFlow",
+        "PRTG"
+      ],
+      "imageUrl": "",
+      "liveUrl": "",
+      "githubUrl": "https://github.com/AjayReddy999/youtube-trending-etl-aws",
+      "color": "#8f89ff"
+    },
+    {
+      "name": "",
+      "description": "",
+      "technologies": [
+        "Windows Server",
+        "Active Directory",
+        "Group Policy (GPO)",
+        "Microsoft Entra ID",
+        "MFA",
+        "RBAC",
+        "Conditional Access",
+        "PowerShell",
+        "Ansible",
+        "Terraform",
+        "Prometheus",
+        "Grafana"
+      ],
+      "imageUrl": "",
+      "liveUrl": "",
+      "githubUrl": "",
+      "color": "#34d399"
+    },
+    {
+      "name": "Network-Operations-Automation-Platform",
+      "description": "GitHub repository: Network-Operations-Automation-Platform",
+      "technologies": [
+        "Python",
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ],
+      "imageUrl": "",
+      "liveUrl": "https://github.com/Ajay-Devarapalli/Network-Operations-Automation-Platform",
+      "githubUrl": "https://github.com/Ajay-Devarapalli/Network-Operations-Automation-Platform",
+      "color": "#ed649e"
+    },
+    {
+      "name": "Hospital-Network-Data-Monitoring-System-HNDMS",
+      "description": "GitHub repository: Hospital-Network-Data-Monitoring-System-HNDMS",
+      "technologies": [
+        "TypeScript",
+        "JavaScript",
+        "CSS",
+        "HTML"
+      ],
+      "imageUrl": "",
+      "liveUrl": "https://github.com/Ajay-Devarapalli/Hospital-Network-Data-Monitoring-System-HNDMS",
+      "githubUrl": "https://github.com/Ajay-Devarapalli/Hospital-Network-Data-Monitoring-System-HNDMS",
+      "color": "#f97316"
+    },
+    {
+      "name": "Aj",
+      "description": "GitHub repository: Aj",
+      "technologies": [],
+      "imageUrl": "",
+      "liveUrl": "https://github.com/Ajay-Devarapalli/Aj",
+      "githubUrl": "https://github.com/Ajay-Devarapalli/Aj",
+      "color": "#facc15"
+    }
+  ]
+}

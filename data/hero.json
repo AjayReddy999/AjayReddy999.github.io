@@ -1,0 +1,41 @@
+{
+  "greeting": "Hello, I'm",
+  "name": "AJAYKUMAR REDDY DEVARAPALLI",
+  "roles": [
+    "Network Infrastructure Engineer",
+    "Infrastructure Engineer",
+    "Associate Network Engineer"
+  ],
+  "tagline": "Network Infrastructure Engineer with 4+ years across enterprise LAN/WAN, hybrid cloud networking (AWS/Azure), network security, systems and identity infrastructure, and automation. Currently at PayPal, validating SD-WAN, firewall, and hybrid-cloud changes with network and security teams, enforcing Zero Trust access, and troubleshooting DNS, DHCP, VPN, and authentication issues across hybrid environments. Previously built and operated multi-site Cisco and Fortinet networks for an energy-sector client. Strong in BGP/OSPF, secure connectivity, observability, and automation with Python, Ansible, Terraform, and Netmiko/NAPALM. M.S. Computer Science; CCNA.",
+  "ctaPrimary": {
+    "text": "View Projects",
+    "href": "#projects"
+  },
+  "ctaSecondary": {
+    "text": "Get Resume",
+    "href": "#contact"
+  },
+  "codeSnippet": {
+    "filename": "developer.js",
+    "code": "const profile = {\n    name: 'AJAYKUMAR REDDY DEVARAPALLI',\n    title: 'Network Infrastructure Engineer',\n    skills: [\n        'Python', 'PowerShell', 'Netmiko', 'NAPALM', 'Ansible', 'Terraform', 'REST APIs', 'Microsoft Graph API', 'Git'\n    ],\n    hardWorker: true,\n    quickLearner: true,\n    problemSolver: true,\n    yearsOfExperience: 1,\n    hireable: function() {\n        return (\n            this.hardWorker &&\n            this.problemSolver &&\n            this.skills.length >= 5\n        );\n    }\n};"
+  },
+  "floatingBadges": [
+    {
+      "text": "UI Magic",
+      "color": "purple"
+    },
+    {
+      "text": "Clean Code",
+      "color": "blue"
+    },
+    {
+      "text": "Innovation",
+      "color": "amber"
+    }
+  ],
+  "socialLinks": {
+    "github": "https://github.com/Ajay-Devarapalli",
+    "linkedin": "https://www.linkedin.com/in/ajaykumar-networkengineer/",
+    "email": "dajaykumarnetworkeng@gmail.com"
+  }
+}

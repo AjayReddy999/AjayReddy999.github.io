@@ -1,0 +1,309 @@
+{
+  "heading": "Skills & Technologies",
+  "categories": [
+    {
+      "name": "Languages",
+      "color": "#60a5fa",
+      "icon": "code",
+      "skills": [
+        {
+          "name": "Python",
+          "level": 90
+        },
+        {
+          "name": "PowerShell",
+          "level": 84
+        }
+      ]
+    },
+    {
+      "name": "Frameworks",
+      "color": "#34d399",
+      "icon": "server",
+      "skills": [
+        {
+          "name": "Netmiko",
+          "level": 85
+        },
+        {
+          "name": "NAPALM",
+          "level": 85
+        },
+        {
+          "name": "Ansible",
+          "level": 84
+        },
+        {
+          "name": "Terraform",
+          "level": 76
+        },
+        {
+          "name": "REST APIs",
+          "level": 90
+        },
+        {
+          "name": "Microsoft Graph API",
+          "level": 82
+        }
+      ]
+    },
+    {
+      "name": "Tools & Platforms",
+      "color": "#f97316",
+      "icon": "cloud",
+      "skills": [
+        {
+          "name": "Git",
+          "level": 79
+        },
+        {
+          "name": "Visio",
+          "level": 75
+        },
+        {
+          "name": "Lucidchart",
+          "level": 80
+        },
+        {
+          "name": "ServiceNow",
+          "level": 89
+        },
+        {
+          "name": "SolarWinds",
+          "level": 94
+        },
+        {
+          "name": "PRTG",
+          "level": 80
+        },
+        {
+          "name": "Wireshark",
+          "level": 88
+        },
+        {
+          "name": "tcpdump",
+          "level": 92
+        },
+        {
+          "name": "Prometheus",
+          "level": 88
+        },
+        {
+          "name": "Grafana",
+          "level": 94
+        }
+      ]
+    },
+    {
+      "name": "Technical",
+      "color": "#a78bfa",
+      "icon": "palette",
+      "skills": [
+        {
+          "name": "BGP",
+          "level": 82
+        },
+        {
+          "name": "OSPF",
+          "level": 82
+        },
+        {
+          "name": "MPLS",
+          "level": 91
+        },
+        {
+          "name": "VLANs",
+          "level": 86
+        },
+        {
+          "name": "STP",
+          "level": 93
+        },
+        {
+          "name": "EtherChannel",
+          "level": 85
+        },
+        {
+          "name": "NAT",
+          "level": 84
+        },
+        {
+          "name": "QoS",
+          "level": 75
+        },
+        {
+          "name": "DNS",
+          "level": 80
+        },
+        {
+          "name": "DHCP",
+          "level": 85
+        },
+        {
+          "name": "IPv4/IPv6",
+          "level": 76
+        },
+        {
+          "name": "SD-WAN",
+          "level": 87
+        },
+        {
+          "name": "Cisco IOS/NX-OS",
+          "level": 81
+        },
+        {
+          "name": "Juniper",
+          "level": 83
+        },
+        {
+          "name": "F5 Load Balancing",
+          "level": 89
+        },
+        {
+          "name": "Cisco ASA",
+          "level": 81
+        },
+        {
+          "name": "Fortinet FortiGate",
+          "level": 79
+        },
+        {
+          "name": "Palo Alto",
+          "level": 81
+        },
+        {
+          "name": "IPSec/SSL VPN",
+          "level": 91
+        },
+        {
+          "name": "Zero Trust",
+          "level": 90
+        },
+        {
+          "name": "Conditional Access",
+          "level": 82
+        },
+        {
+          "name": "RADIUS/TACACS+",
+          "level": 91
+        },
+        {
+          "name": "Network Segmentation",
+          "level": 84
+        },
+        {
+          "name": "AWS VPC",
+          "level": 93
+        },
+        {
+          "name": "Transit Gateway",
+          "level": 85
+        },
+        {
+          "name": "Azure Virtual Networks",
+          "level": 93
+        },
+        {
+          "name": "ExpressRoute",
+          "level": 77
+        },
+        {
+          "name": "Site-to-Site VPN",
+          "level": 90
+        },
+        {
+          "name": "Hybrid Connectivity",
+          "level": 87
+        },
+        {
+          "name": "Windows Server Administration",
+          "level": 85
+        },
+        {
+          "name": "Active Directory",
+          "level": 75
+        },
+        {
+          "name": "Group Policy (GPO)",
+          "level": 89
+        },
+        {
+          "name": "Microsoft Entra ID",
+          "level": 82
+        },
+        {
+          "name": "Hybrid Identity",
+          "level": 91
+        },
+        {
+          "name": "MFA",
+          "level": 88
+        },
+        {
+          "name": "RBAC",
+          "level": 82
+        },
+        {
+          "name": "IAM",
+          "level": 78
+        },
+        {
+          "name": "SolarWinds",
+          "level": 87
+        },
+        {
+          "name": "PRTG",
+          "level": 88
+        },
+        {
+          "name": "Wireshark",
+          "level": 82
+        },
+        {
+          "name": "tcpdump",
+          "level": 76
+        },
+        {
+          "name": "NetFlow",
+          "level": 94
+        },
+        {
+          "name": "Prometheus",
+          "level": 86
+        },
+        {
+          "name": "Grafana",
+          "level": 84
+        },
+        {
+          "name": "ServiceNow",
+          "level": 83
+        },
+        {
+          "name": "ITIL v4",
+          "level": 85
+        },
+        {
+          "name": "Change Management / CAB",
+          "level": 94
+        },
+        {
+          "name": "HLD/LLD",
+          "level": 76
+        },
+        {
+          "name": "Visio",
+          "level": 93
+        },
+        {
+          "name": "Lucidchart",
+          "level": 78
+        },
+        {
+          "name": "Runbooks",
+          "level": 75
+        }
+      ]
+    }
+  ]
+}
