@@ -5,6 +5,7 @@
     {
       "title": "Infrastructure Engineer",
       "company": "PayPal",
+      "logo": "assets/images/logos/paypal.svg",
       "location": "",
       "startDate": "2025",
       "endDate": "Present",
@@ -41,6 +42,7 @@
     {
       "title": "Associate Network Engineer",
       "company": "Provenetix Consulting Services",
+      "logo": "assets/images/logos/provenetix.webp",
       "location": "",
       "startDate": "2021",
       "endDate": "2023",

@@ -464,13 +464,18 @@
           '</div>';
       }
 
+      const fallbackIcon = icon(expIcons[idx % expIcons.length]);
+      const logoHtml = pos.logo
+        ? `<div class="exp-card-logo"><img src="${pos.logo}" alt="${pos.company} logo" loading="lazy" decoding="async"></div>`
+        : fallbackIcon;
+
       card.innerHTML = `
         <div class="exp-card-glass"></div>
         <div class="exp-card-gradient-border"></div>
         <div class="exp-card-inner">
           <div class="exp-card-icon">
             <div class="exp-card-icon-glow"></div>
-            ${icon(expIcons[idx % expIcons.length])}
+            ${logoHtml}
           </div>
           <div class="exp-card-title">${pos.title}</div>
           <div class="exp-card-meta">
@@ -480,6 +485,14 @@
           <p class="exp-card-description">${pos.description}</p>
           ${achieveHtml}
         </div>`;
+
+      // Fall back to the default icon if the logo fails to load
+      const logoImg = card.querySelector('.exp-card-logo img');
+      if (logoImg) {
+        logoImg.addEventListener('error', () => {
+          logoImg.parentElement.outerHTML = fallbackIcon;
+        }, { once: true });
+      }
 
       grid.appendChild(card);
     });
@@ -510,11 +523,13 @@
 
       const color = proj.color || '#5196fd';
 
+      const placeholder = `<div class="project-card-image-placeholder">${icon('laptop')}</div>`;
       let imgContent = '';
       if (proj.imageUrl) {
-        imgContent = `<img src="${proj.imageUrl}" alt="${proj.name}">`;
+        const alt = `${proj.name || `Project ${idx + 1}`} thumbnail`;
+        imgContent = `<img src="${proj.imageUrl}" alt="${alt}" loading="lazy" decoding="async" width="1200" height="750">`;
       } else {
-        imgContent = `<div class="project-card-image-placeholder">${icon('laptop')}</div>`;
+        imgContent = placeholder;
       }
 
       let techsHtml = '';
@@ -547,6 +562,14 @@
             </div>
           </div>
         </div>`;
+
+      // Fall back to the placeholder if the thumbnail fails to load
+      const thumb = card.querySelector('.project-card-image img');
+      if (thumb) {
+        thumb.addEventListener('error', () => {
+          thumb.outerHTML = placeholder;
+        }, { once: true });
+      }
 
       grid.appendChild(card);
     });

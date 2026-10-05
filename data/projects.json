@@ -5,9 +5,9 @@
       "name": "Centralized Asset Management & Compliance Dashboard",
       "description": "**Centralized asset-management and compliance platform** designed to provide security assessment, compliance monitoring, and data-loss-prevention capabilities across managed infrastructure.",
       "technologies": [],
-      "imageUrl": "",
+      "imageUrl": "assets/images/projects/asset-management-compliance.webp",
       "liveUrl": "",
-      "githubUrl": "https://github.com/AjayReddy999/",
+      "githubUrl": "https://github.com/AjayReddy999/centralized-asset-management-system-with-compliance-self-audit-dashboard",
       "color": "#5196fd"
     },
     {
@@ -26,32 +26,10 @@
         "NetFlow",
         "PRTG"
       ],
-      "imageUrl": "",
+      "imageUrl": "assets/images/projects/youtube-trending-etl-aws.webp",
       "liveUrl": "",
       "githubUrl": "https://github.com/AjayReddy999/youtube-trending-etl-aws",
       "color": "#8f89ff"
-    },
-    {
-      "name": "",
-      "description": "",
-      "technologies": [
-        "Windows Server",
-        "Active Directory",
-        "Group Policy (GPO)",
-        "Microsoft Entra ID",
-        "MFA",
-        "RBAC",
-        "Conditional Access",
-        "PowerShell",
-        "Ansible",
-        "Terraform",
-        "Prometheus",
-        "Grafana"
-      ],
-      "imageUrl": "",
-      "liveUrl": "",
-      "githubUrl": "",
-      "color": "#34d399"
     },
     {
       "name": "Network-Operations-Automation-Platform",
@@ -62,7 +40,7 @@
         "CSS",
         "JavaScript"
       ],
-      "imageUrl": "",
+      "imageUrl": "assets/images/projects/network-operations-automation.webp",
       "liveUrl": "https://github.com/Ajay-Devarapalli/Network-Operations-Automation-Platform",
       "githubUrl": "https://github.com/Ajay-Devarapalli/Network-Operations-Automation-Platform",
       "color": "#ed649e"
@@ -76,19 +54,10 @@
         "CSS",
         "HTML"
       ],
-      "imageUrl": "",
+      "imageUrl": "assets/images/projects/hospital-network-monitoring.webp",
       "liveUrl": "https://github.com/Ajay-Devarapalli/Hospital-Network-Data-Monitoring-System-HNDMS",
       "githubUrl": "https://github.com/Ajay-Devarapalli/Hospital-Network-Data-Monitoring-System-HNDMS",
       "color": "#f97316"
-    },
-    {
-      "name": "Aj",
-      "description": "GitHub repository: Aj",
-      "technologies": [],
-      "imageUrl": "",
-      "liveUrl": "https://github.com/Ajay-Devarapalli/Aj",
-      "githubUrl": "https://github.com/Ajay-Devarapalli/Aj",
-      "color": "#facc15"
     }
   ]
 }
