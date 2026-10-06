@@ -17,7 +17,7 @@
   },
   "codeSnippet": {
     "filename": "developer.js",
-    "code": "const profile = {\n    name: 'AJAYKUMAR REDDY DEVARAPALLI',\n    title: 'Network Infrastructure Engineer',\n    skills: [\n        'Python', 'PowerShell', 'Netmiko', 'NAPALM', 'Ansible', 'Terraform', 'REST APIs', 'Microsoft Graph API', 'Git'\n    ],\n    hardWorker: true,\n    quickLearner: true,\n    problemSolver: true,\n    yearsOfExperience: 1,\n    hireable: function() {\n        return (\n            this.hardWorker &&\n            this.problemSolver &&\n            this.skills.length >= 5\n        );\n    }\n};"
+    "code": "const profile = {\n    name: 'AJAYKUMAR REDDY DEVARAPALLI',\n    title: 'Network Infrastructure Engineer',\n    skills: [\n        'Python', 'PowerShell', 'Netmiko', 'NAPALM', 'Ansible', 'Terraform', 'REST APIs', 'Microsoft Graph API', 'Git'\n    ],\n    hardWorker: true,\n    quickLearner: true,\n    problemSolver: true,\n    yearsOfExperience: 4,\n    hireable: function() {\n        return (\n            this.hardWorker &&\n            this.problemSolver &&\n            this.skills.length >= 5\n        );\n    }\n};"
   },
   "floatingBadges": [
     {
