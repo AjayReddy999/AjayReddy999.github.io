@@ -106,13 +106,13 @@
     words.forEach((word, i) => {
       const span = document.createElement('span');
       span.className = 'flip-word' + (i === 0 ? ' active' : '');
-      // Wrap each character in a span for staggered animation
-      span.innerHTML = word.split('').map((ch, ci) => {
-        const delay = ci * 0.025;
-        return ch === ' '
-          ? ' '
-          : `<span class="flip-char" style="transition-delay: ${delay}s">${ch}</span>`;
-      }).join('');
+      // Wrap each character in a span for staggered animation, grouped per word
+      // so a long role wraps between words, never mid-word
+      let ci = 0;
+      span.innerHTML = word.split(' ').map(w =>
+        '<span class="flip-word-unit">' + w.split('').map(ch =>
+          `<span class="flip-char" style="transition-delay: ${(ci++) * 0.025}s">${ch}</span>`).join('') + '</span>'
+      ).join(' ');
       container.appendChild(span);
     });
 
