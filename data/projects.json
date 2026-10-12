@@ -133,6 +133,23 @@
       "liveUrl": "",
       "githubUrl": "https://github.com/AjayReddy999/healthcare-data-analysis-using-powerbi",
       "color": "#f472b6"
+    },
+    {
+      "name": "Online Banking: Spring Boot & React/Redux",
+      "description": "Full-stack online banking application with a Java Spring Boot REST API and a React/Redux single-page frontend for registration, account history, transfers, deposits, withdrawals and payments, with a live account-flow chart.",
+      "technologies": [
+        "Java",
+        "Spring Boot",
+        "React",
+        "Redux",
+        "Redux Thunk",
+        "Material UI",
+        "JWT"
+      ],
+      "imageUrl": "assets/images/projects/online-banking.webp",
+      "liveUrl": "",
+      "githubUrl": "https://github.com/AjayReddy999/advanced-full-stack-project-with-java-spring-boot-and-react-redux-online-banking",
+      "color": "#2dd4bf"
     }
   ]
 }
