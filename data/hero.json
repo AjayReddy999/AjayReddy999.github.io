@@ -1,41 +1,66 @@
 {
-  "greeting": "Hello, I'm",
-  "name": "AJAYKUMAR REDDY DEVARAPALLI",
+  "greeting": "Hi, I'm",
+  "name": "Ajaykumar Reddy Devarapalli",
   "roles": [
     "Network Infrastructure Engineer",
-    "Infrastructure Engineer",
-    "Associate Network Engineer"
+    "Hybrid Cloud Networking · AWS & Azure",
+    "Network Security & Zero Trust",
+    "Network Automation · Python & Ansible"
   ],
-  "tagline": "Network Infrastructure Engineer with 4+ years across enterprise LAN/WAN, hybrid cloud networking (AWS/Azure), network security, systems and identity infrastructure, and automation. Currently at PayPal, validating SD-WAN, firewall, and hybrid-cloud changes with network and security teams, enforcing Zero Trust access, and troubleshooting DNS, DHCP, VPN, and authentication issues across hybrid environments. Previously built and operated multi-site Cisco and Fortinet networks for an energy-sector client. Strong in BGP/OSPF, secure connectivity, observability, and automation with Python, Ansible, Terraform, and Netmiko/NAPALM. M.S. Computer Science; CCNA.",
+  "tagline": "I design, validate and automate secure enterprise networks across on-prem, AWS and Azure. 4+ years with Cisco, Fortinet, SD-WAN and Zero Trust, currently keeping hybrid infrastructure reliable at PayPal.",
   "ctaPrimary": {
     "text": "View Projects",
     "href": "#projects"
   },
   "ctaSecondary": {
-    "text": "Get Resume",
+    "text": "Contact Me",
     "href": "#contact"
   },
-  "codeSnippet": {
-    "filename": "developer.js",
-    "code": "const profile = {\n    name: 'AJAYKUMAR REDDY DEVARAPALLI',\n    title: 'Network Infrastructure Engineer',\n    skills: [\n        'Python', 'PowerShell', 'Netmiko', 'NAPALM', 'Ansible', 'Terraform', 'REST APIs', 'Microsoft Graph API', 'Git'\n    ],\n    hardWorker: true,\n    quickLearner: true,\n    problemSolver: true,\n    yearsOfExperience: 4,\n    hireable: function() {\n        return (\n            this.hardWorker &&\n            this.problemSolver &&\n            this.skills.length >= 5\n        );\n    }\n};"
-  },
-  "floatingBadges": [
-    {
-      "text": "UI Magic",
-      "color": "purple"
-    },
-    {
-      "text": "Clean Code",
-      "color": "blue"
-    },
-    {
-      "text": "Innovation",
-      "color": "amber"
-    }
-  ],
   "socialLinks": {
     "github": "https://github.com/AjayReddy999",
     "linkedin": "https://www.linkedin.com/in/ajaykumar-networkengineer/",
     "email": "dajaykumarnetworkeng@gmail.com"
+  },
+  "badge": "Infrastructure Engineer @ PayPal",
+  "profileCard": {
+    "photo": "assets/images/ajay-profile.jpg",
+    "role": "Infrastructure Engineer",
+    "company": "PayPal",
+    "location": "Texas, USA",
+    "tags": [
+      {
+        "text": "CCNA",
+        "icon": "certificate",
+        "color": "blue"
+      },
+      {
+        "text": "Zero Trust",
+        "icon": "shield",
+        "color": "purple"
+      },
+      {
+        "text": "AWS · Azure",
+        "icon": "cloud",
+        "color": "amber"
+      }
+    ],
+    "stats": [
+      {
+        "value": "4+",
+        "label": "Years in network engineering"
+      },
+      {
+        "value": "5,000+",
+        "label": "Users covered by validated rollouts"
+      },
+      {
+        "value": "2,000+",
+        "label": "Devices under Zero Trust access"
+      },
+      {
+        "value": "98%",
+        "label": "SLA adherence on Tier 2/3 tickets"
+      }
+    ]
   }
 }

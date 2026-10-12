@@ -1,13 +1,13 @@
 {
   "heading": "Professional Journey",
-  "subtitle": "Transforming ideas into digital reality, one project at a time",
+  "subtitle": "Four years of building, securing and automating enterprise and hybrid-cloud networks",
   "positions": [
     {
       "title": "Infrastructure Engineer",
       "company": "PayPal",
       "logo": "assets/images/logos/paypal.svg",
-      "location": "",
-      "startDate": "2025",
+      "location": "Texas, USA",
+      "startDate": "Jan 2025",
       "endDate": "Present",
       "description": "Validate SD-WAN, firewall, and hybrid Azure/AWS network changes with network and security teams before production rollout, including readiness checks for rollouts affecting 5,000+ users.\nTroubleshoot and resolve escalated DNS, DHCP, VPN, and connectivity issues across hybrid environments using Wireshark, Prometheus/Grafana, and system logs; eliminate recurring root causes to reduce repeat tickets.\nImplement Zero Trust access controls (Entra ID Conditional Access, MFA, RBAC) across a 2,000+ device environment to secure network and application access.\nInvestigate escalated authentication and provisioning issues across hybrid Active Directory and Entra ID environments, supporting Windows Server-based identity infrastructure.\nAutomate configuration reporting and compliance checks with Ansible, PowerShell, Terraform, and Microsoft Graph API, reducing manual work by ~35%.\nMaintain Visio network diagrams, runbooks, and ITIL v4 change documentation; participate in CAB to plan deployment windows, rollback plans, and post-implementation reviews.\nMentor newer team members on troubleshooting methodology and deployment workflows.",
       "achievements": [
@@ -43,9 +43,9 @@
       "title": "Associate Network Engineer",
       "company": "Provenetix Consulting Services",
       "logo": "assets/images/logos/provenetix.webp",
-      "location": "",
-      "startDate": "2021",
-      "endDate": "2023",
+      "location": "India",
+      "startDate": "Jan 2021",
+      "endDate": "Jul 2023",
       "description": "Built and maintained multi-site LAN/WAN on Cisco IOS/NX-OS (BGP, OSPF, MPLS, VLANs, EtherChannel) across 30+ devices and 15+ network segments.\nTuned BGP route policy and prefix filtering for ISP peering, reducing routing convergence time by ~22%.\nConfigured Cisco ASA and FortiGate firewalls, IPSec/SSL and GRE tunnels, RADIUS/TACACS+ authentication, and F5 load balancers; supported wireless LAN design for office and branch sites.\nDelivered hybrid connectivity across Azure VNets/ExpressRoute and AWS VPC/Transit Gateway for 10+ hybrid network paths.\nWrote Python (Netmiko, NAPALM), PowerShell, and Ansible automation for configuration validation and compliance checks, reducing manual configuration work by ~45%.\nMonitored performance with SolarWinds, PRTG, Wireshark, and NetFlow, reducing MTTR by ~30%; resolved Tier 2/3 ServiceNow tickets at 98% SLA adherence.\nRan validation for network upgrades, hardware changes, and SD-WAN migrations; authored HLD/LLD documentation, network diagrams, runbooks, and validation reports.",
       "achievements": [
         "Built and maintained multi-site LAN/WAN on Cisco IOS/NX-OS (BGP, OSPF, MPLS, VLANs, EtherChannel) across 30+ devices and 15+ network segments.",
@@ -84,7 +84,8 @@
         "NetFlow",
         "ServiceNow",
         "SD-WAN"
-      ]
+      ],
+      "client": "Crescent Petroleum"
     }
   ]
 }

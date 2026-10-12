@@ -42,6 +42,12 @@
     menu: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>',
     rocket: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg>',
     certificate: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M8 10h8"/><path d="M8 14h4"/><circle cx="17" cy="18" r="3"/><path d="M17 21v-3"/></svg>',
+    shield: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>',
+    key: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="7.5" cy="15.5" r="5.5"/><path d="m21 2-9.6 9.6"/><path d="m15.5 7.5 3 3L22 7l-3-3"/></svg>',
+    activity: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>',
+    terminal: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>',
+    clipboard: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="2" width="8" height="4" rx="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="M9 12h6"/><path d="M9 16h4"/></svg>',
+    router: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="14" width="20" height="8" rx="2"/><line x1="6" y1="18" x2="6.01" y2="18"/><line x1="10" y1="18" x2="10.01" y2="18"/><line x1="15" y1="10" x2="15" y2="14"/><path d="M17.84 7.17a4 4 0 0 0-5.66 0"/><path d="M20.66 4.34a8 8 0 0 0-11.31 0"/></svg>',
   };
 
   function icon(name, extraClass) {
@@ -168,10 +174,10 @@
     if (!sphere) return;
 
     const techNames = [
-      'JS', 'TS', 'React', 'Vue', 'Node', 'Python', 'Go', 'Rust',
-      'HTML', 'CSS', 'Docker', 'AWS', 'Git', 'Linux', 'SQL', 'Redis',
-      'Next.js', 'Express', 'Figma', 'Vercel', 'Firebase', 'GraphQL',
-      'Jest', 'Vite', 'Tailwind', 'Svelte', 'MongoDB', 'K8s'
+      'BGP', 'OSPF', 'MPLS', 'SD-WAN', 'VLANs', 'Cisco', 'Juniper', 'FortiGate',
+      'Palo Alto', 'F5', 'VPN', 'Zero Trust', 'AWS', 'Azure', 'Entra ID', 'DNS',
+      'DHCP', 'Python', 'Ansible', 'Terraform', 'Netmiko', 'NAPALM', 'PowerShell',
+      'Wireshark', 'NetFlow', 'Grafana', 'PRTG', 'ServiceNow'
     ];
 
     const count = techNames.length;
@@ -306,16 +312,16 @@
     // Meteors
     createMeteors(section.querySelector('.hero-meteors'), 8);
 
-    // Welcome badge text
-    section.querySelector('.hero-badge-text').textContent = 'Welcome to my universe';
+    // Status badge (current role)
+    section.querySelector('.hero-badge-text').textContent = data.badge || 'Welcome to my universe';
 
-    // Heading with SparklesText on greeting
+    // Heading: small greeting, then the name split over two lines (last word on its own line)
     const heading = section.querySelector('.hero-name');
-    heading.innerHTML = `<span class="hero-name-hello" id="heroGreeting">${data.greeting || "Hello, I'm"}</span><span class="hero-name-line"><span class="gradient-text"> ${data.name || 'Developer'}</span></span>`;
-
-    // Add sparkles to greeting text
-    const greetingEl = document.getElementById('heroGreeting');
-    createSparkles(greetingEl);
+    const nameWords = (data.name || 'Developer').split(' ');
+    const lastName = nameWords.length > 1 ? nameWords.pop() : '';
+    heading.innerHTML = `<span class="hero-name-hello">${data.greeting || "Hello, I'm"}</span>` +
+      `<span class="hero-name-line"><span class="gradient-text">${nameWords.join(' ')}</span></span>` +
+      (lastName ? `<span class="hero-name-line"><span class="gradient-text">${lastName}</span></span>` : '');
 
     // Flip words
     const flipContainer = section.querySelector('.hero-role-text');
@@ -337,22 +343,25 @@
       ctaSecondary.querySelector('.btn-inner').innerHTML = `<span>${data.ctaSecondary.text || 'Get Resume'}</span>${icon('envelope', 'btn-icon-mail')}`;
     }
 
-    // Floating badges
-    const badgeContainer = section.querySelector('.hero-floating-badges');
-    const badgeIcons = { purple: 'wand', blue: 'code', amber: 'lightbulb' };
-    if (data.floatingBadges) {
-      data.floatingBadges.forEach(b => {
-        const div = document.createElement('div');
-        div.className = `floating-badge floating-badge--${b.color}`;
-        div.innerHTML = `${icon(badgeIcons[b.color] || 'code')} ${b.text}`;
-        badgeContainer.appendChild(div);
-      });
-    }
-
-    // Code window
-    if (data.codeSnippet) {
-      section.querySelector('.code-window-filename').innerHTML = `${icon('codeFile')} ${data.codeSnippet.filename || 'developer.js'}`;
-      section.querySelector('.code-window-body').innerHTML = highlightCode(data.codeSnippet.code || '');
+    // Profile card: photo, current role, credential tags and headline numbers
+    const card = section.querySelector('.hero-profile-card');
+    const p = data.profileCard;
+    if (card && p) {
+      const tags = (p.tags || []).map(t =>
+        `<span class="floating-badge floating-badge--${t.color || 'blue'}">${icon(t.icon || 'award')} ${t.text}</span>`).join('');
+      const stats = (p.stats || []).map(s =>
+        `<div class="hero-profile-stat"><span class="hero-profile-stat-value">${s.value}</span><span class="hero-profile-stat-label">${s.label}</span></div>`).join('');
+      card.innerHTML = `
+        <div class="hero-profile-top">
+          <div class="hero-profile-photo"><img src="${p.photo}" alt="${data.name || 'Profile'}" decoding="async"></div>
+          <div class="hero-profile-id">
+            <div class="hero-profile-role">${p.role || ''}</div>
+            <div class="hero-profile-company">${p.company || ''}</div>
+            ${p.location ? `<div class="hero-profile-location">${icon('mapPin')} ${p.location}</div>` : ''}
+          </div>
+        </div>
+        ${tags ? `<div class="hero-floating-badges">${tags}</div>` : ''}
+        ${stats ? `<div class="hero-profile-stats">${stats}</div>` : ''}`;
     }
   }
 
@@ -407,6 +416,8 @@
     const iconMap = {
       code: 'code', server: 'server', cloud: 'cloud', palette: 'palette',
       frontend: 'code', backend: 'server', devops: 'cloud', design: 'palette',
+      router: 'router', shield: 'shield', key: 'key', activity: 'activity',
+      terminal: 'terminal', clipboard: 'clipboard', network: 'network', globe: 'globe',
     };
 
     (data.categories || []).forEach(cat => {
@@ -416,26 +427,35 @@
       const iconName = iconMap[cat.icon] || iconMap[cat.name?.toLowerCase()?.split(' ')[0]] || 'code';
       const color = cat.color || '#60a5fa';
 
+      const skills = cat.skills || [];
+      // Plain skill names render as chips; { name, level } objects keep the progress-bar layout
+      const asChips = skills.every(s => typeof s === 'string');
       let skillsHtml = '';
-      (cat.skills || []).forEach(skill => {
-        const level = typeof skill === 'object' ? skill.level : 80;
-        const name = typeof skill === 'object' ? skill.name : skill;
-        skillsHtml += `
-          <div class="skill-item">
-            <div class="skill-item-header">
-              <span class="skill-item-name">${name}</span>
-              <span class="skill-item-level">${level}%</span>
-            </div>
-            <div class="skill-item-bar">
-              <div class="skill-item-fill" style="--bar-color: ${color}; --bar-color-end: ${color}88; --fill-width: ${level}%;" data-level="${level}"></div>
-            </div>
-          </div>`;
-      });
+      if (asChips) {
+        card.classList.add('skill-card--chips');
+        skillsHtml = skills.map(s => `<span class="skill-chip" style="--chip-color: ${color}">${s}</span>`).join('');
+      } else {
+        skills.forEach(skill => {
+          const level = typeof skill === 'object' ? skill.level : 80;
+          const name = typeof skill === 'object' ? skill.name : skill;
+          skillsHtml += `
+            <div class="skill-item">
+              <div class="skill-item-header">
+                <span class="skill-item-name">${name}</span>
+                <span class="skill-item-level">${level}%</span>
+              </div>
+              <div class="skill-item-bar">
+                <div class="skill-item-fill" style="--bar-color: ${color}; --bar-color-end: ${color}88; --fill-width: ${level}%;" data-level="${level}"></div>
+              </div>
+            </div>`;
+        });
+      }
 
       card.innerHTML = `
         <div class="skill-card-header">
           <div class="skill-card-icon" style="color: ${color}">${icon(iconName)}</div>
           <div class="skill-card-title">${cat.name}</div>
+          ${asChips ? `<span class="skill-card-count">${skills.length}</span>` : ''}
         </div>
         <div class="skill-card-items">${skillsHtml}</div>`;
 
@@ -459,10 +479,15 @@
 
       let achieveHtml = '';
       if (pos.achievements && pos.achievements.length) {
-        achieveHtml = '<div class="exp-card-achievements">' +
-          pos.achievements.map(a => `<span class="exp-card-achievement">${a}</span>`).join('') +
-          '</div>';
+        achieveHtml = '<ul class="exp-card-achievements">' +
+          pos.achievements.map(a => `<li class="exp-card-achievement">${a}</li>`).join('') +
+          '</ul>';
       }
+      // The description repeats the bullets, so only show it when there are no bullets
+      const descHtml = achieveHtml ? '' : `<p class="exp-card-description">${pos.description}</p>`;
+      const techHtml = (pos.technologies && pos.technologies.length)
+        ? `<div class="exp-card-techs">${pos.technologies.map(t => `<span class="exp-card-tech">${t}</span>`).join('')}</div>`
+        : '';
 
       const fallbackIcon = icon(expIcons[idx % expIcons.length]);
       const logoHtml = pos.logo
@@ -473,17 +498,24 @@
         <div class="exp-card-glass"></div>
         <div class="exp-card-gradient-border"></div>
         <div class="exp-card-inner">
-          <div class="exp-card-icon">
-            <div class="exp-card-icon-glow"></div>
-            ${logoHtml}
+          <div class="exp-card-side">
+            <div class="exp-card-icon">
+              <div class="exp-card-icon-glow"></div>
+              ${logoHtml}
+            </div>
+            <div class="exp-card-title">${pos.title}</div>
+            <div class="exp-card-meta">
+              <span class="exp-card-company">${pos.company}</span>
+              <span class="exp-card-period">${pos.startDate}${pos.endDate ? ' – ' + pos.endDate : ''}</span>
+              ${pos.location ? `<span class="exp-card-location">${icon('mapPin')} ${pos.location}</span>` : ''}
+              ${pos.client ? `<span class="exp-card-client">Client: ${pos.client}</span>` : ''}
+            </div>
           </div>
-          <div class="exp-card-title">${pos.title}</div>
-          <div class="exp-card-meta">
-            <span class="exp-card-company">${pos.company}</span>
-            <span class="exp-card-period">${pos.startDate}${pos.endDate ? ' - ' + pos.endDate : ''}</span>
+          <div class="exp-card-main">
+            ${descHtml}
+            ${achieveHtml}
+            ${techHtml}
           </div>
-          <p class="exp-card-description">${pos.description}</p>
-          ${achieveHtml}
         </div>`;
 
       // Fall back to the default icon if the logo fails to load
