@@ -558,7 +558,6 @@
             <div class="project-card-divider"></div>
             <div class="project-card-links">
               ${proj.githubUrl ? `<a href="${proj.githubUrl}" target="_blank" rel="noopener noreferrer" class="project-card-link" style="color: ${color}">${icon('github')} <span>Code</span></a>` : ''}
-              ${proj.liveUrl ? `<a href="${proj.liveUrl}" target="_blank" rel="noopener noreferrer" class="project-card-link" style="color: ${color}">${icon('globe')} <span>Live</span></a>` : ''}
             </div>
           </div>
         </div>`;

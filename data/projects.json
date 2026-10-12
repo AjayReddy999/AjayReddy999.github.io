@@ -30,34 +30,6 @@
       "liveUrl": "",
       "githubUrl": "https://github.com/AjayReddy999/youtube-trending-etl-aws",
       "color": "#8f89ff"
-    },
-    {
-      "name": "Network-Operations-Automation-Platform",
-      "description": "GitHub repository: Network-Operations-Automation-Platform",
-      "technologies": [
-        "Python",
-        "HTML",
-        "CSS",
-        "JavaScript"
-      ],
-      "imageUrl": "assets/images/projects/network-operations-automation.webp",
-      "liveUrl": "https://github.com/Ajay-Devarapalli/Network-Operations-Automation-Platform",
-      "githubUrl": "https://github.com/Ajay-Devarapalli/Network-Operations-Automation-Platform",
-      "color": "#ed649e"
-    },
-    {
-      "name": "Hospital-Network-Data-Monitoring-System-HNDMS",
-      "description": "GitHub repository: Hospital-Network-Data-Monitoring-System-HNDMS",
-      "technologies": [
-        "TypeScript",
-        "JavaScript",
-        "CSS",
-        "HTML"
-      ],
-      "imageUrl": "assets/images/projects/hospital-network-monitoring.webp",
-      "liveUrl": "https://github.com/Ajay-Devarapalli/Hospital-Network-Data-Monitoring-System-HNDMS",
-      "githubUrl": "https://github.com/Ajay-Devarapalli/Hospital-Network-Data-Monitoring-System-HNDMS",
-      "color": "#f97316"
     }
   ]
 }
