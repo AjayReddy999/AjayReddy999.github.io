@@ -2794,3 +2794,105 @@ input, textarea {
   text-decoration: none;
   z-index: 10;
 }
+
+/* ---- Projects: compact cards side by side (5 + 4 on desktop) ---- */
+.projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.25rem;
+}
+
+.projects-grid .project-card {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 100%;
+  border-radius: var(--radius-xl);
+}
+
+.projects-grid .project-card-image {
+  height: auto;
+  min-height: 0;
+  aspect-ratio: 16 / 10;
+  border-radius: 0;
+}
+
+.projects-grid .project-card-number {
+  top: 0.6rem;
+  left: 0.6rem;
+  padding: 0.2rem 0.6rem;
+  font-size: 0.68rem;
+}
+
+.projects-grid .project-card-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem 1.1rem 1.1rem;
+}
+
+.projects-grid .project-card-accent {
+  margin-bottom: 0.6rem;
+}
+
+.projects-grid .project-card-accent-line {
+  width: 2rem;
+}
+
+.projects-grid .project-card-name {
+  font-size: 0.98rem;
+  line-height: 1.35;
+  margin-bottom: 0.5rem;
+}
+
+.projects-grid .project-card-desc {
+  font-size: 0.8rem;
+  line-height: 1.55;
+  margin-bottom: 0.85rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.projects-grid .project-card-techs {
+  gap: 0.35rem;
+  margin-bottom: 0.9rem;
+}
+
+.projects-grid .project-card-tech {
+  font-size: 0.68rem;
+  padding: 0.2rem 0.5rem;
+}
+
+.project-card-tech--more {
+  color: var(--text-muted);
+  background: rgba(148, 163, 184, 0.08);
+  border-color: var(--border-subtle);
+}
+
+.projects-grid .project-card-divider {
+  margin-bottom: 0.75rem;
+}
+
+.projects-grid .project-card-link {
+  font-size: 0.8rem;
+}
+
+.projects-grid .project-card-link svg {
+  width: 16px;
+  height: 16px;
+}
+
+@media (min-width: 560px) {
+  .projects-grid .project-card { flex-basis: calc((100% - 1.25rem) / 2); }
+}
+
+@media (min-width: 900px) {
+  .projects-grid .project-card { flex-basis: calc((100% - 2 * 1.25rem) / 3); }
+}
+
+@media (min-width: 1240px) {
+  .projects-grid .project-card { flex-basis: calc((100% - 4 * 1.25rem) / 5); }
+}

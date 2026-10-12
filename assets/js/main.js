@@ -579,9 +579,13 @@
       }
 
       let techsHtml = '';
-      if (proj.technologies && proj.technologies.length) {
+      const techs = proj.technologies || [];
+      if (techs.length) {
+        const shown = techs.slice(0, 2);
+        const more = techs.length - shown.length;
         techsHtml = '<div class="project-card-techs">' +
-          proj.technologies.map(t => `<span class="project-card-tech">${t}</span>`).join('') +
+          shown.map(t => `<span class="project-card-tech">${t}</span>`).join('') +
+          (more > 0 ? `<span class="project-card-tech project-card-tech--more" title="${techs.slice(2).join(', ')}">+${more}</span>` : '') +
           '</div>';
       }
 
@@ -900,8 +904,6 @@
     // 3D Icon Cloud
     createIconCloud('iconCloud');
 
-    // Stacking project cards
-    initStackingCards();
 
     requestAnimationFrame(() => {
       initRevealAnimations();
