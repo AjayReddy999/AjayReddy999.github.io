@@ -2885,14 +2885,34 @@ input, textarea {
   height: 16px;
 }
 
-@media (min-width: 560px) {
+/* Two per row; on wider screens each card puts its thumbnail beside the text */
+@media (min-width: 640px) {
   .projects-grid .project-card { flex-basis: calc((100% - 1.25rem) / 2); }
 }
 
-@media (min-width: 900px) {
-  .projects-grid .project-card { flex-basis: calc((100% - 2 * 1.25rem) / 3); }
-}
+@media (min-width: 1024px) {
+  .projects-grid {
+    max-width: 1180px;
+    margin: 0 auto;
+  }
 
-@media (min-width: 1240px) {
-  .projects-grid .project-card { flex-basis: calc((100% - 4 * 1.25rem) / 5); }
+  .projects-grid .project-card {
+    flex-direction: row;
+  }
+
+  .projects-grid .project-card-image {
+    flex: 0 0 42%;
+    aspect-ratio: auto;
+    min-height: 100%;
+    background: #040817;
+  }
+
+  /* Show the whole 16:10 thumbnail instead of cropping its sides */
+  .projects-grid .project-card-image img {
+    object-fit: contain;
+  }
+
+  .projects-grid .project-card-body {
+    padding: 1.1rem 1.25rem;
+  }
 }
