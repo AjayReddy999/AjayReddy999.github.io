@@ -2782,3 +2782,15 @@ input, textarea {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
 }
+
+/* Scroll cue sits in the flow under the stat cards, so it can never overlap them */
+.hero-scroll-indicator {
+  position: relative;
+  bottom: auto;
+  left: auto;
+  transform: none;
+  width: fit-content;
+  margin: 2.5rem auto 0;
+  text-decoration: none;
+  z-index: 10;
+}
