@@ -343,25 +343,36 @@
       ctaSecondary.querySelector('.btn-inner').innerHTML = `<span>${data.ctaSecondary.text || 'Get Resume'}</span>${icon('envelope', 'btn-icon-mail')}`;
     }
 
-    // Profile card: photo, current role, credential tags and headline numbers
-    const card = section.querySelector('.hero-profile-card');
-    const p = data.profileCard;
-    if (card && p) {
-      const tags = (p.tags || []).map(t =>
-        `<span class="floating-badge floating-badge--${t.color || 'blue'}">${icon(t.icon || 'award')} ${t.text}</span>`).join('');
-      const stats = (p.stats || []).map(s =>
-        `<div class="hero-profile-stat"><span class="hero-profile-stat-value">${s.value}</span><span class="hero-profile-stat-label">${s.label}</span></div>`).join('');
-      card.innerHTML = `
-        <div class="hero-profile-top">
-          <div class="hero-profile-photo"><img src="${p.photo}" alt="${data.name || 'Profile'}" decoding="async"></div>
-          <div class="hero-profile-id">
-            <div class="hero-profile-role">${p.role || ''}</div>
-            <div class="hero-profile-company">${p.company || ''}</div>
-            ${p.location ? `<div class="hero-profile-location">${icon('mapPin')} ${p.location}</div>` : ''}
-          </div>
-        </div>
-        ${tags ? `<div class="hero-floating-badges">${tags}</div>` : ''}
-        ${stats ? `<div class="hero-profile-stats">${stats}</div>` : ''}`;
+    // Portrait
+    const portrait = section.querySelector('.portrait-frame img');
+    if (portrait && data.photo) {
+      portrait.src = data.photo;
+      portrait.alt = data.name || 'Profile photo';
+    } else if (portrait) {
+      section.querySelector('.hero-visual').remove();
+    }
+    const portraitBadge = section.querySelector('.portrait-badge');
+    if (portraitBadge) portraitBadge.innerHTML = icon('network');
+
+    // Social links under the summary
+    const social = section.querySelector('.hero-social');
+    const links = data.socialLinks || {};
+    if (social) {
+      social.innerHTML = [
+        links.github && `<a href="${links.github}" target="_blank" rel="noopener noreferrer" class="hero-social-link" aria-label="GitHub">${icon('github')}</a>`,
+        links.linkedin && `<a href="${links.linkedin}" target="_blank" rel="noopener noreferrer" class="hero-social-link" aria-label="LinkedIn">${icon('linkedin')}</a>`,
+        links.email && `<a href="mailto:${links.email}" class="hero-social-link" aria-label="Email">${icon('email')}</a>`,
+      ].filter(Boolean).join('');
+    }
+
+    // Stat cards row below the buttons
+    const statsRow = section.querySelector('.hero-stats');
+    if (statsRow) {
+      statsRow.innerHTML = (data.stats || []).map(s => `
+        <div class="hero-stat">
+          <span class="hero-stat-icon" style="color: ${s.color || 'var(--gradient-start)'}">${icon(s.icon || 'award')}</span>
+          <span class="hero-stat-text"><strong>${s.value}</strong> ${s.label}</span>
+        </div>`).join('');
     }
   }
 
@@ -369,14 +380,17 @@
     if (!data) return;
     const section = document.getElementById('about');
 
-    section.querySelector('.about-roles').textContent = data.roles || 'About Me';
+    const title = section.querySelector('.about-title');
+    if (title) title.textContent = data.heading || 'About Me';
 
-    // Image or placeholder
+    // Older layout: roles line and photo column (only rendered if present in the markup)
+    const roles = section.querySelector('.about-roles');
+    if (roles) roles.textContent = data.roles || 'About Me';
     const imgWrapper = section.querySelector('.about-image-wrapper');
-    if (data.avatarUrl) {
-      imgWrapper.innerHTML = `<img src="${data.avatarUrl}" alt="Profile photo">`;
-    } else {
-      imgWrapper.innerHTML = '<div class="about-image-placeholder">&lt;/&gt;</div>';
+    if (imgWrapper) {
+      imgWrapper.innerHTML = data.avatarUrl
+        ? `<img src="${data.avatarUrl}" alt="Profile photo">`
+        : '<div class="about-image-placeholder">&lt;/&gt;</div>';
     }
 
     // Bio

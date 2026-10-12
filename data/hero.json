@@ -22,45 +22,31 @@
     "email": "dajaykumarnetworkeng@gmail.com"
   },
   "badge": "Infrastructure Engineer @ PayPal",
-  "profileCard": {
-    "photo": "assets/images/ajay-profile.jpg",
-    "role": "Infrastructure Engineer",
-    "company": "PayPal",
-    "location": "Texas, USA",
-    "tags": [
-      {
-        "text": "CCNA",
-        "icon": "certificate",
-        "color": "blue"
-      },
-      {
-        "text": "Zero Trust",
-        "icon": "shield",
-        "color": "purple"
-      },
-      {
-        "text": "AWS · Azure",
-        "icon": "cloud",
-        "color": "amber"
-      }
-    ],
-    "stats": [
-      {
-        "value": "4+",
-        "label": "Years in network engineering"
-      },
-      {
-        "value": "5,000+",
-        "label": "Users covered by validated rollouts"
-      },
-      {
-        "value": "2,000+",
-        "label": "Devices under Zero Trust access"
-      },
-      {
-        "value": "98%",
-        "label": "SLA adherence on Tier 2/3 tickets"
-      }
-    ]
-  }
+  "photo": "assets/images/ajay-profile.jpg",
+  "stats": [
+    {
+      "icon": "briefcase",
+      "value": "4+",
+      "label": "Years Experience",
+      "color": "#f87171"
+    },
+    {
+      "icon": "network",
+      "value": "5,000+",
+      "label": "Users Covered by Rollouts",
+      "color": "#22d3ee"
+    },
+    {
+      "icon": "shield",
+      "value": "2,000+",
+      "label": "Devices under Zero Trust",
+      "color": "#a78bfa"
+    },
+    {
+      "icon": "certificate",
+      "value": "CCNA",
+      "label": "Certified",
+      "color": "#fbbf24"
+    }
+  ]
 }
