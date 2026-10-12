@@ -3,7 +3,7 @@
   "projects": [
     {
       "name": "Centralized Asset Management & Compliance Dashboard",
-      "description": "**Centralized asset-management and compliance platform** designed to provide security assessment, compliance monitoring, and data-loss-prevention capabilities across managed infrastructure.",
+      "description": "Centralized asset-management and compliance platform designed to provide security assessment, compliance monitoring, and data-loss-prevention capabilities across managed infrastructure.",
       "technologies": [],
       "imageUrl": "assets/images/projects/asset-management-compliance.webp",
       "liveUrl": "",
@@ -12,7 +12,7 @@
     },
     {
       "name": "YouTube Trending Data ETL on AWS",
-      "description": "Production-oriented AWS ETL pipeline** for ingesting, transforming, cataloging, querying, and visualizing YouTube trending-video data.",
+      "description": "Production-oriented AWS ETL pipeline for ingesting, transforming, cataloging, querying, and visualizing YouTube trending-video data.",
       "technologies": [
         "VLANs",
         "OSPF",
@@ -30,6 +30,109 @@
       "liveUrl": "",
       "githubUrl": "https://github.com/AjayReddy999/youtube-trending-etl-aws",
       "color": "#8f89ff"
+    },
+    {
+      "name": "Spark · Kafka · Cassandra Streaming Pipeline",
+      "description": "Real-time data streaming pipeline that streams API data through Kafka into Cassandra with Spark Structured Streaming, orchestrated by Airflow on a Docker Compose cluster.",
+      "technologies": [
+        "Apache Spark",
+        "Kafka",
+        "Cassandra",
+        "Airflow",
+        "Docker",
+        "Python"
+      ],
+      "imageUrl": "assets/images/projects/spark-kafka-cassandra.webp",
+      "liveUrl": "",
+      "githubUrl": "https://github.com/AjayReddy999/spark-kafka-cassandra-pipeline",
+      "color": "#22d3ee"
+    },
+    {
+      "name": "Uber Expenses Tracking: Airflow, Redshift & Power BI",
+      "description": "ETL pipeline on AWS that parses Uber Rides and Uber Eats email receipts, loads them through Airflow into an Amazon Redshift data model, and visualizes spending in Power BI.",
+      "technologies": [
+        "Apache Airflow",
+        "AWS Redshift",
+        "Amazon S3",
+        "Docker",
+        "Python",
+        "Power BI"
+      ],
+      "imageUrl": "assets/images/projects/uber-expenses-tracking.webp",
+      "liveUrl": "",
+      "githubUrl": "https://github.com/AjayReddy999/uber-expenses-tracking",
+      "color": "#818cf8"
+    },
+    {
+      "name": "SQL Data Warehouse",
+      "description": "Modern data warehouse on SQL Server using Bronze, Silver and Gold layers to ingest ERP and CRM extracts, cleanse and standardize them, and publish a star schema for analytics.",
+      "technologies": [
+        "SQL Server",
+        "T-SQL",
+        "ETL",
+        "Data Modeling",
+        "Star Schema"
+      ],
+      "imageUrl": "assets/images/projects/sql-data-warehouse.webp",
+      "liveUrl": "",
+      "githubUrl": "https://github.com/AjayReddy999/sql-datawarehouse-project",
+      "color": "#a78bfa"
+    },
+    {
+      "name": "ETL Validation with Python",
+      "description": "Cross-database ETL validation from Oracle to PostgreSQL: an Informatica PowerCenter pipeline checked by Python scripts that compare source and target data.",
+      "technologies": [
+        "Python",
+        "Pandas",
+        "Oracle",
+        "PostgreSQL",
+        "Informatica PowerCenter"
+      ],
+      "imageUrl": "assets/images/projects/etl-validation-python.webp",
+      "liveUrl": "",
+      "githubUrl": "https://github.com/AjayReddy999/etl-validation-with-python-scripting",
+      "color": "#34d399"
+    },
+    {
+      "name": "Supply Chain Analysis: AtliQ Mart (FMCG)",
+      "description": "Power BI supply-chain report for an FMCG manufacturer, tracking On-Time, In-Full and OTIF delivery against service-level targets across cities and customers.",
+      "technologies": [
+        "Power BI",
+        "DAX",
+        "Data Modeling",
+        "Supply Chain Analytics"
+      ],
+      "imageUrl": "assets/images/projects/supply-chain-atliqmart.webp",
+      "liveUrl": "",
+      "githubUrl": "https://github.com/AjayReddy999/supply-chain-analysis-in-the-fmcg-domain-atliqmart",
+      "color": "#fbbf24"
+    },
+    {
+      "name": "U.S. Healthcare Industry Dynamics (2019–2020)",
+      "description": "Multi-page Power BI analysis of the U.S. healthcare landscape covering hospital performance, patient outcomes, provider metrics and monthly expense trends.",
+      "technologies": [
+        "Power BI",
+        "DAX",
+        "Data Modeling",
+        "Healthcare Analytics"
+      ],
+      "imageUrl": "assets/images/projects/us-healthcare-analysis.webp",
+      "liveUrl": "",
+      "githubUrl": "https://github.com/AjayReddy999/us-healthcare-analysis-powerbi",
+      "color": "#60a5fa"
+    },
+    {
+      "name": "Healthcare Data Analysis using Power BI",
+      "description": "Interactive Power BI dashboard on hospital visitor data, using DAX and Power Query to surface patient demographics and service-usage trends.",
+      "technologies": [
+        "Power BI",
+        "DAX",
+        "Power Query"
+      ],
+      "imageUrl": "assets/images/projects/healthcare-data-analysis.webp",
+      "liveUrl": "",
+      "githubUrl": "https://github.com/AjayReddy999/healthcare-data-analysis-using-powerbi",
+      "color": "#f472b6"
     }
   ]
 }
